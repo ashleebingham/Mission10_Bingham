@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import BowlingLeague from './BowlingLeague';
+import './App.css';
+import Heading from './Heading';
 
 function App() {
-
   return (
     <>
-    
+      <Heading />
+      <BowlingLeague />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
