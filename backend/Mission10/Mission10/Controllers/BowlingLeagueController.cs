@@ -19,6 +19,7 @@ namespace Mission10.Controllers
         [HttpGet(Name = "GetBowler")]
         public IActionResult Get()
         {
+            // Get bowlers from Marlins and Sharks teams
             var bowlers = _bowlingContext.Bowlers
                             .Include(b => b.Team) // Join with Teams table
                             .Where(b => b.Team.TeamName == "Marlins" || b.Team.TeamName == "Sharks") // Filter teams
